@@ -1,0 +1,178 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	color: #333;
+	font-family: 'Lato', sans-serif;
+	padding: 1em .2em;
+}
+
+img {
+	height: auto;
+	width: 100%;
+}
+
+mark {
+	background-color: #ba3c35;
+	color: #fff;
+}
+
+h1,
+h3,
+a {
+	color: #ba3c35;  
+    text-decoration: none;
+}
+
+h1 {
+	font-family: 'Limelight', cursive;  
+}
+
+a:hover {
+    color: #333;
+}
+
+h2, 
+section p, 
+section h3 {
+	padding: 0 1em;
+}
+
+h2 {
+	font-weight: normal;
+	text-transform: uppercase;	
+}
+
+p {
+	font-size: 1em; 
+	line-height: 1.5em;
+}
+
+header {
+	padding: 0 1em;
+}
+
+header p {
+	padding-top: 10px;
+}
+
+.text-right {
+	text-align: right;
+}
+
+section img, 
+
+a {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+section img {
+	padding: 1em;
+	opacity: 1;
+    -webkit-transform: translateZ(0); /*stops images from shaking slightly on hover*/
+
+}
+
+section img:hover {
+	opacity:.5;
+}
+
+/*grid*/
+
+.grid {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.row {
+	width: 100%;
+    -ms-flex-wrap:wrap;
+    -webkit-flex-wrap:wrap;
+    display:-ms-flexbox;
+    display:-webkit-box;
+    display:-webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+/* For mobile phones: */
+
+[class*='col-'] {
+	width: 100%;
+	display: block;
+}
+
+header h1, header p {
+	margin: .1em 0;
+}
+
+p {
+	text-align: left;
+	padding-bottom: 1em;
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {
+    	width: 8.33%;
+    }
+
+    .col-2 {
+    	width: 16.66%;
+    }
+
+    .col-3 {
+    	width: 25%;
+    }
+
+    .col-4 {
+    	width: 33.33%;
+    }
+
+    .col-5 {
+    	width: 41.66%;
+    }
+
+    .col-6 {
+    	width: 50%;
+    }
+
+    .col-7 {
+    	width: 58.33%;
+    }
+
+    .col-8 {
+    	width: 66.66%;
+    }
+
+    .col-9 {
+    	width: 75%;
+    }
+
+    .col-10 {
+    	width: 83.33%;
+    }
+
+    .col-11 {
+    	width: 91.66%;
+    }
+
+    .col-12 {
+    	width: 100%;
+    }
+    
+    header p {
+        text-align: right;
+    }
+}
+
